@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Ejemplo GA21090</title>
+	<meta charset="utf-8"/>
+<LINK rel=StyleSheet href="Style.css" type="text/css" media=screen>
+<script src="codigo.js"></script>
+
+</head>
+
+<body >
+	<div class="txt_Presentacion">         
+ <h1>Ejemplo web api </style> </h1>
+     <h1>Erick Gabriel Girón Alvarenga</h1>
+	 <h1>Carnet: GA21090</h1>
+	 <h1> guia #61 B</h1>
+	</div>
+	 <p><button style="height: fit-content;" onclick="obtenerProductos();this.style.display='none';">Obtener Productos</button></h1></p>
+	 <div id="listado" style="display:none;">
+		<div class="container">
+			<h2>Agregar Producto</h2>
+			<form action="#" method="post" enctype="multipart/form-data">
+				<label for="title">Título</label>
+				<input type="text" id="title" name="title" required>
+	
+				<label for="price">Precio</label>
+				<input type="number" id="price" name="price" min="0" step="0.01" required>
+	
+				<label for="description">Descripción</label>
+				<textarea id="description" name="description" rows="4" required></textarea>
+				<label for="image">Imagen</label>
+				<input type="file" id="image" name="image" accept="image/*" required>
+	
+				<label for="category">Categoría</label>
+				<select id="category" name="category" required>
+					<option value="">Selecciona una categoría</option>
+					<option value="electronica">Electrónica</option>
+					<option value="joyeria">Joyeria</option>
+					<option value="caballero">Caballero</option>
+					<option value="dama">Dama
+					</option>
+				</select>
+	
+				<button type="button" onclick="agregarProducto()">Agregar Producto</button>
+
+			</form>
+		</div>
+	 <form name="filtroprods" id="filtroprods">
+	   Seleccione Categorias 
+	   <input type="checkbox" id="c1" value="c1" checked>Electronicos
+	 <input type="checkbox" id="c2" value="c2" checked>Joyería
+   <input type="checkbox" id="c3" value="c3" checked>Ropa Caballero
+   <input type="checkbox" id="c4" value="c4" checked>Ropa Dama
+   <ol><li>Click en la imagen para Acercamiento</li>
+   <li>Click en precio para ordenar Asc o Desc</li></ol>
+     <table id="tabla" border="1">
+	 <thead>
+	 <tr><th>id</th><th>foto</th><th  id="price">price</th>
+	 <th>title</th><th>description</th><th>category</th></tr>
+	 </thead>
+	 <tbody id="tbody"></tbody>
+	 </table>
+	 </form>
+	 </div>
+	
+     
+</body>
+</html>

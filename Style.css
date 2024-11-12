@@ -1,0 +1,106 @@
+img {
+    width: 3cm;
+    height: 3cm;
+    background-color: lightgray;
+}
+
+table {
+    font-style: oblique;
+    width: 80%;
+    margin: auto;
+    background-color: #f9f9f9;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #0a68ab;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+
+th#price {
+    cursor: pointer;
+    background-color: #5b79dc;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+li {
+    color: rgb(137, 28, 28);
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
+input#c1:checked ~ table tbody tr.c1 {
+    display: table-row;
+    background-color: #fff7e6;
+}
+
+input#c1:not(checked) ~ table tbody tr.c1 {
+    display: none;
+}
+
+input#c2:checked ~ table tbody tr.c2 {
+    display: table-row;
+    background-color: #e6f7ff;
+}
+
+input#c2:not(checked) ~ table tbody tr.c2 {
+    display: none;
+}
+
+input#c3:checked ~ table tbody tr.c3 {
+    display: table-row;
+    background-color: #f7e6ff;
+}
+
+input#c3:not(checked) ~ table tbody tr.c3 {
+    display: none;
+}
+
+input#c4:checked ~ table tbody tr.c4 {
+    display: table-row;
+    background-color: #e6ffe6;
+}
+
+input#c4:not(checked) ~ table tbody tr.c4 {
+    display: none;
+}
+
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    width: 690px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(161, 28, 28);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.txt_Presentacion{
+    position: absolute;
+    margin-top:5rem;
+    margin-left:50rem;
+}
